@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./сss/style.css">
+    <title>Открытая школа</title>
+</head>
+<body>
+    <div class="wrapper">
+
+        <header class="header">
+            <div class="container">
+                <div class="main-blick">   
+                    <img src="./img/digital-4.svg" alt="logo" class="logo">
+                    <h1 class="main-blick__title">Твои новости</h1>
+                    <div class="registation">
+                        <button class="button registation__signup">Регистрация</button>
+                        <button class="button registation__signin">Войти</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="popup popup__registration">
+            <div class="popup__wrapper">
+            <img src="./img/icons/close.svg" alt="Закрыть" class="popup__close">
+            <div class="popup__content">
+                <h3 class="popup__title">Регистрация</h3>
+                <form class="popup__form">
+                    <label class="popup__label" for="email">email</label>
+                    <input type="email" id="email" minlength="2" name="email" maxlength="30" class="popup__input"
+                            placeholder="Введите email" required/>
+                    <span id="name-email-error1" class="error" data-for="email"></span>
+                    <label class="popup__label" for="password">Пароль</label>
+                    <input type="password" id="password" name="password" minlength="2" maxlength="30" class="popup__input"
+                            placeholder="Введите пароль" required/>
+                    <span id="name-password-error1" class="error" data-for="password"></span>
+                    <label class="popup__label" for="name">Имя</label>
+                    <input type="text" id="name" minlength="2" name="name" maxlength="30" class="popup__input"
+                            placeholder="Введите свое имя" required/>
+                    <span id="name-name-error" class="error" data-for="name"></span>
+                    <button type="submit" class="popup__button">Зарегистрироваться</button>
+                </form>
+                <p class="popup__content-entrance">или <a class="popup__content-link" href="#">Войти</a></p>
+            </div>
+            </div>
+        </div>
+
+        <div class="popup popup__entrance">
+            <div class="popup__wrapper">
+            <img src="./img/icons/close.svg" alt="Закрыть" class="popup-entrance__close">
+            <div class="popup__content">
+                <h3 class="popup__title">Вход</h3>
+                <form class="popup__form popup__form_entrance">
+                <label class="popup__label" for="email-ent">email</label>
+                <input type="email" id="email-ent"  name="email" minlength="2" maxlength="30" class="popup__input" placeholder="Введите email" required/>
+                <span id="name-email-error" class="error" data-for="email"></span>
+                <label class="popup__label" for="password-ent">Пароль</label>
+                <input type="password" id="password-ent" name="password" minlength="2" maxlength="30" class="popup__input" placeholder="Введите пароль" required/>
+                <span id="name-password-error" class="error" data-for="password"></span>
+                <button type="submit" class="popup__button popup__button_size">Войти</button>
+                </form>
+                <p class="popup__content-entrance">или <a class="popup__content-link popup__content-link_registry" href="#">Зарегистрироваться</a></p>
+            </div>
+        </div>
+        </div>
+
+        <div class="popup popup__info hidden">
+            <div class="popup__wrapper">
+            <img src="./img/icons/close.svg" alt="Закрыть" class="popup-info__close" />
+            <div class="popup__content">
+                <h3 class="popup__title">Пользователь успешно зарегистрирован!</h3>
+                <a class="popup__content-link" href="#">Войти</a>
+            </div>
+        </div>
+        </div>
+
+        <section class="news">
+
+        </section>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>
